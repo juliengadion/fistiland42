@@ -1,0 +1,289 @@
+h1 {
+    color: rgba(128, 114, 114, 0.151);
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    float: left;
+}
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.856);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bg {
+    background-image: url("../img/granolaxator.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.pb{
+    padding-top: 40px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color:rgb(99, 97, 97);
+    animation: slideIn 10s ease-in-out;
+    -moz-animation: slideIn 10s ease-in-out;
+    -webkit-animation: slideIn 10s ease-in-out;
+}
+
+.progress {
+    height: 50px;
+    background-color: rgb(168, 164, 164);
+    margin-top: 50px;
+}
+
+@keyframes slideIn {
+    0% {
+      width: 0%;
+    }
+  
+    25% {
+        width: 50%;
+    }
+
+    50% {
+      width: 85%;
+    }
+  
+    100% {
+      width: normal;
+    }
+  }
+
+  @-moz-keyframes slideIn {
+    0% {
+      width: 0%;
+    }
+  
+    25% {
+        width: 50%;
+    }
+
+    50% {
+      width: 85%;
+    }
+  
+    100% {
+      width: normal;
+    }
+  }
+
+  @-webkit-keyframes slideIn {
+    0% {
+      width: 0%;
+    }
+  
+    25% {
+        width: 50%;
+    }
+
+    50% {
+      width: 85%;
+    }
+  
+    100% {
+      width: normal;
+    }
+  }
+
+form {
+    float: right;
+    margin-bottom: -15px;
+}
+
+#submit {
+    background-color: rgba(128, 128, 128, 0.479);
+    border: gray;
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+  .fisty {
+      width: 100%;
+      height: auto;
+      position: relative;
+      bottom: -500px;
+      -webkit-animation: popIn ease-in 1;
+      -moz-animation: popIn ease-in 1;
+      animation: popIn ease-in 1;
+      animation-fill-mode: forwards;
+      animation-duration: 10s;
+  }
+
+  @keyframes popIn {
+      from {
+          bottom: -500px;
+      }
+      to {
+          bottom: 0;
+      }
+  }
+
+  @-moz-keyframes popIn {
+    from {
+        bottom: -500px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@-webkit-keyframes popIn {
+    from {
+        bottom: -500px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+
+.disclaimer {
+    background-color:rgba(99, 97, 97, 0.493);
+    color: whitesmoke;
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 1850px) and (max-width: 1920px) {
+    .disclaimer {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .fisty {
+        display: none;
+    }
+    .disclaimer {
+        height: 300px;
+        overflow: scroll;
+        scroll-behavior: auto;
+    }
+
+    .balloons {
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+    .disclaimer {
+        /* height: 350px; */
+        margin-bottom: 70px;
+    }
+    .pb {
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 1141px) and (max-width: 1850px){
+    .disclaimer {
+        height: 250px;
+        width: 50%;
+        margin-bottom: 70px;
+            overflow: scroll;
+            overflow-x: hidden;
+            
+    }
+}
+
+
+/* ballons */
+
+.balloons {
+    margin-right: 450px;
+    right: 0;
+    bottom: -2000px;
+    position: absolute;
+    -webkit-animation: fly ease-in;
+    -moz-animation: fly ease-in ;
+    animation: fly ease-in ;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    animation-duration: 6s;
+    animation-delay: 8s;
+}
+
+@keyframes fly {
+    from {
+        bottom: -2000px;
+    }
+    
+    to {
+        bottom: 0;
+    }
+}
+    
+    @-webkit-keyframes fly {
+    from {
+        bottom: -2000px;
+    }
+    
+    to {
+        bottom: 0;
+    }
+}
+    
+    @-moz-keyframes fly {
+    from {
+        bottom: -2000px;
+    }
+    
+    to {
+        bottom: 0;
+    }
+ } 
+
+/* flip logo */
+
+.logo {
+    animation: flip 3s 10s;
+}
+
+@-moz-keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

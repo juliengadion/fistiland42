@@ -1,0 +1,363 @@
+@font-face {
+    font-family: SnackerComic;
+    src: url("../fonts/snacker_comic/SnackerComic.ttf");
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(247, 247, 247); */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/hotel/bg_room.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.300), rgba(255,255,255,1));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.navbar{
+    width: 100%;
+    background-color: transparent !important;
+    position: absolute;
+    transition: 0.8s;
+    padding: 0;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: darkorange !important; 
+    height: 3.5em;
+  }
+
+.navbar a {
+    color: white !important;
+    font-size: 25px;
+    padding: 8px 30px !important;
+    font-weight: 500;
+    text-shadow: 4px 5px 6px black;
+    border-bottom: solid 3px transparent;
+    transition: 0.8s;
+}
+
+.navbar a:hover {
+    border-bottom: solid 3px rgb(220, 220, 220);
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-fixed {
+    background-color: darkorange;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+h1 {
+    color: whitesmoke;
+    font-family: SnackerComic;
+    font-size: 90px;
+    text-shadow: -2px 2px 15px rgb(87, 119, 134);
+    padding-top: 50px;
+}
+
+#btnLogin {
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#btnLogin:hover {
+    background-color: rgb(0, 123, 255);
+}
+
+header{
+    text-align: center;
+    margin-bottom: 200px;
+    height: 500px;
+    background-image: url("../img/planet-coaster3.jpg");
+    border-bottom-left-radius: 100% 35%;
+    border-bottom-right-radius: 100% 35%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: overlay;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnticket:hover, #btnroom:hover, #btnForm:hover{
+    background-color: white !important;
+    border: solid 1px rgb(0, 123, 255);
+    color: rgb(0, 123, 255) !important;
+    
+}
+
+#btnticket, #btnroom, #btnForm{
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+.navfooter{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.navfooter ul{
+    list-style-type: none;
+}
+
+h5{
+    font-size: 18px;
+    text-align: center;
+}
+
+#footermid{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding: 0%;
+    margin: 0;
+}
+
+.navfooter a{
+    color: black !important;
+    font-size: 15px;
+    padding: 8px 30px !important;
+    font-weight: 500;
+    border-bottom: solid 3px transparent;
+}
+
+/* Main */
+ /* ///// INTERTITTRE ////*/
+
+.interContainerDroite {
+    background-color: rgba(255, 140, 0, 0.8);
+    transform: skewY(-6deg);
+    transform-origin: top;
+    width: 100%;
+    height: 200px;
+}
+
+.interDroite {
+    transform: skewY(6deg);
+    transform-origin: top left;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: SnackerComic;
+    text-shadow: 4px 5px 6px black;
+    letter-spacing: 5px;
+}
+
+.interContainerGauche {
+    background-color: rgba(255, 140, 0, 0.7);
+    transform: skewY(6deg);
+    transform-origin: top;
+    width: 100%;
+    height: 200px;
+}
+
+.interGauche {
+    transform: skewY(-6deg);
+    transform-origin: top right;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: SnackerComic;
+    text-shadow: 4px 5px 6px black;
+    letter-spacing: 5px;
+}
+
+/*$$$$$$$$| Billeterie |$$$$$$$$*/
+/* Button */
+#md-fist, #md-anu {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 23.6px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(0, 123, 255);
+    bottom: 15px;
+    right: 450px;
+}
+
+.btnCards {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 23.6px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(0, 123, 255);
+    bottom: 15px;
+    position: absolute;
+    right: 20%;
+}
+
+#reservGauche .card, #reservDroite .card, #forfaitGauche .card, #forfaitDroite .card{
+    border-radius: 15px;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.356);
+}
+#Fistpass .card, #Anupass .card{
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.356);
+}
+
+#md-fist, #md-anu {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 23.6px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    bottom: 180px;
+    background-color: rgb(0, 123, 255);
+    right: 450px;
+}
+
+.btnCards:hover, #md-fist:hover, #md-anu:hover {
+    border: solid 1px rgb(0, 123, 255);
+    border-radius: 23.6px;
+    color: rgb(0, 123, 255);
+    background-color: white;
+}
+
+#contentBilleterie{
+    max-width: 80%;
+    margin: auto;
+}
+
+#forfaitDroite .card-block, #forfaitGauche .card-block, #reservDroite .card-block, #reservGauche .card-block{
+    width: 55%;
+    position: relative;
+}
+
+#forfaitDroite img, #forfaitGauche img, #reservDroite img, #reservGauche img{
+    width: 100%;
+    height: 150px;
+}
+
+#AnuPass .card, #Fistpass .card{
+    margin: auto;
+}
+
+.bg-text{
+    font-size: 25px;
+    padding: 0%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: initial;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+
+.sub{
+    font-size: 12px;
+}
+
+#sm-fist, #sm-anu{
+    display: none;
+    height: 55px;
+}
+
+.blinker{
+    text-decoration: blink;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    color: yellow;
+    font-weight: bold;
+}
+
+@keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    #contentBilleterie{
+        max-width: 100%;
+    }
+    #sm-fist, #sm-anu{
+        display: none;
+    }
+    #md-fist, #md-anu{
+        right: 210px;
+    }
+    .card-img-overlay{
+        font-size: 17px;
+    }
+    .card-img-overlay h5{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #contentBilleterie{
+        max-width: 100%;
+    }
+    #forfaitDroite .card-block, #forfaitGauche .card-block, #reservDroite .card-block, #reservGauche .card-block{
+        width: 100%;
+    }
+    #forfaitDroite .card-header, #forfaitGauche .card-header,
+    #reservDroite .card-header, #reservGauche .card-header{
+        margin: auto;
+    }
+    #Fistpass .card-text, #AnuPass .card-text{
+        display: none;
+    }
+    #md-fist, #md-anu{
+        display: none;
+    }
+    #sm-fist, #sm-anu{
+        display: initial;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .btnCards{
+        position: initial;
+    }
+    .bg-text{
+        display: none;
+    }
+}

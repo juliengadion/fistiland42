@@ -1,0 +1,395 @@
+/* Preset */
+/* Mise en page */
+@font-face {
+    font-family: SnackerComic;
+    src: url("../fonts/snacker_comic/SnackerComic.ttf");
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.300), rgba(255,255,255,1));;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Header */
+h1 {
+    color: whitesmoke;
+    font-family: SnackerComic;
+    font-size: 90px;
+    text-shadow: -2px 2px 15px rgb(87, 119, 134);
+    padding-top: 50px;
+    animation-name: flip, breath;
+    animation-duration: 3s, 2s;
+    animation-delay: 0s, 2s;
+}
+/* Animation H1*/
+@-moz-keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flip {
+    from {
+        
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+        
+    }
+}
+
+@keyframes breath {
+    0% {
+        letter-spacing: 0;
+    }
+    50% {
+        letter-spacing: 12px;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 200px;
+    height: 800px;
+    background-image: url("../img/planet-coaster3.jpg");
+    border-bottom-left-radius: 100% 35%;
+    border-bottom-right-radius: 100% 35%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: overlay;
+}
+
+.slogan {
+    top: 90px;
+    color: whitesmoke;
+    text-shadow: 4px 5px 6px black;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-delay: 2s;
+    position: relative;
+    z-index: 0000;
+}
+
+.slogan h3 {
+    padding-bottom: 20px;
+}
+/* Boutons */
+#btnLogin {
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#btnLogin:hover {
+    background-color: rgb(0, 123, 255);
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#btnticket:hover, #btnroom:hover {
+    background-color: white !important;
+    border: solid 1px rgb(0, 123, 255) ;
+    color: rgb(0, 123, 255) !important;
+    
+}
+
+#btnticket, #btnroom{
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* animation bouton cassé */
+
+#btnroom {
+    animation: broken ease-out;
+    transform-origin: top left;
+    animation-delay: 3.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards
+}
+
+@keyframes broken{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(110deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(75deg);
+    }
+}
+
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    background-color: transparent !important;
+    position: absolute;
+    transition: 0.8s;
+    padding: 0;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: darkorange !important; 
+    height: 3.5em;
+}
+
+.navbar a {
+    color: white !important;
+    font-size: 25px;
+    padding: 8px 30px !important;
+    font-weight: 500;
+    text-shadow: 4px 5px 6px black;
+    border-bottom: solid 3px transparent;
+    transition: 0.8s;
+}
+
+.navbar a:hover {
+    border-bottom: solid 3px rgb(220, 220, 220);
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-fixed {
+    background-color: darkorange;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Text Defilant */
+
+.dealtext {
+    position: absolute;
+    display: block;
+    top: 50px;
+    width: 50%;
+    font-size: 2em;
+    animation-name: defil;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes defil {
+    0%, 25% { left: -100%; opacity: 0; }
+    25%,50% { left: 25%; opacity: 1; }
+    60%, 100% { left: 50%; opacity: 0; }
+}
+/* Media queries */
+/* Smal */
+@media screen and (max-width: 767px){
+    header{
+        height: 650px;
+        border-bottom-left-radius: 100% 15%;
+        border-bottom-right-radius: 100% 15%;
+    }
+    .container-fluid{
+        overflow-x: hidden;
+    }
+    .navbar a, .navbar a:hover{
+        border-bottom: transparent;
+    }
+    #navbarSupportedContent {
+        z-index: 1000;
+    }
+    .navbar-nav {
+        background-color: darkorange !important;
+    }
+    .dealtext{
+        font-size: 1em;
+    }
+    #btnticket {
+        margin-bottom: 5px;
+    }
+    .modal-content {
+        width: 100% !important;
+    }
+}
+/* Medium */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .container-fluid{
+        overflow-x: hidden;
+    }
+    h1{
+        padding-top: 20px;
+    }
+
+    .navbar a, .navbar a:hover{
+        border-bottom: transparent;
+    }
+    .dropdown-menu.show a{
+        text-align: center;
+    }
+    #navbarSupportedContent {
+        z-index: 1000;
+    }
+    .navbar-nav {
+        background-color: darkorange !important;
+    }
+    header{
+        border-bottom-left-radius: 100% 15%;
+        border-bottom-right-radius: 100% 15%;  
+    }
+    .dealtext{
+        top: 80px;
+    }
+    .modal-content {
+        width: 100% !important;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* modal Content */
+  .modal-content{
+    position: relative;
+    background-color: #fefefe2a;
+    margin: auto;
+    padding: 0;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: pop_in;
+    -webkit-animation-duration: 1s;
+    animation-name: pop_in;
+    animation-duration: 2s ease;
+    z-index: 5000;
+  }
+
+  @keyframes pop_in {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+  }
+  
+  .modal-content h4{
+    color: white;
+    padding-top: 10px;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color:rgba(0, 0, 0, 0.678);
+    border: none;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    background-color:rgba(0, 0, 0, 0.678);
+    color: white;
+  }
+  
+  #closeBtn {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 0;
+  }
+  #closeBtn:hover {
+    color: rgb(212, 205, 205);
+  }
+
+ .modal .input-group-text {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.modal .form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white !important;
+}
+.modal .form-control:focus {
+    border-color: white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+  .login_btn {
+    color: white;
+  }
+  .login_btn:hover {
+      color: rgb(212, 205, 205);
+  }

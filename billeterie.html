@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Fistiland au fond du fun">
+    <meta name="keywords" content="fistiland, fist, promo, theme park">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/billeterie.css">
+    <title>Fistiland, au fond du fun !</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="billeterie">
+        <header id="top">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h1 class="breath">Fistiland</h1>
+                </div>
+                <div class="col-sm-4 d-none d-lg-block">
+                    <button type="button" class="btn" id="btnLogin">Mon compte <a href="#"></a></button>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <section class="navi">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="home.html">Accueil<span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Parc
+                                    </a>
+                                    <div class="dropdown-menu" id="dropdownMenu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="parc.html">Plan</a>
+                                        <a class="dropdown-item" href="attractions.html">Attractions</a>
+                                        <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+                                        <a class="dropdown-item" href="hotels.html">Hôtels</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="billeterie.html">Billeterie</a>
+                                </li>
+                                </li class="nav-item">
+                                <a class="nav-link" href="transports.html">Se rendre à Fistiland</a>
+                                <li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="#">Mon compte</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <div class="container" id="contentBilleterie">
+                <!-- Hotels & Restaurant -->
+                <div class="row mt-5 mb-5">
+                    <!-- Col gauche -->
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="reservGauche">
+                        <!-- 1 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/hotel/maya-hotel.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Le Saint Dave</h4>
+                                <p class="card-text">Allez au fond du fun dans l'une de nos suites Fister et bénéficiez
+                                    de -20% sur présentation de votre AnuPass</p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/hotel/sanatorium.png" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Le Royal Prypiat</h4>
+                                <p class="card-text">Royal Prypiat vous ofre le must du confort soviètique circa 1986.
+                                </p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/hotel/urbex.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Das Block</h4>
+                                <p class="card-text">Mélant l'architecture élégante de la RDA et les subtiles arches
+                                    typiques des constructions
+                                    nord-africaines.</p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="card flex-row flex-wrap text-center mt-5 mb-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/hotel/f1.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Le Come 'n Go</h4>
+                                <p class="card-text">Special petit budget et recommandé pour les débutants ne souhaitant
+                                    pas s'éterniser à l'intérieur.
+                                </p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Col droite -->
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="reservDroite">
+                        <!-- 1 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/restaurants/bar-midi-0.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Bateau Beurré</h4>
+                                <p class="card-text"> La fameuse spécialité du Bateau Beurré : les bulots frits,
+                                    recoltés chaque
+                                    matins dans la rivière.
+                                    <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/restaurants/poing.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Le Poing d'Exclamation</h4>
+                                <p class="card-text">Le Poing d'Exclamation propose un ensemble de spécialités réalisées
+                                    à partir de restes.</p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/restaurants/food_fuck.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">Le Food Fuck</h4>
+                                <p class="card-text"> Une petite envie ? Nos Food Fuck sont là pour vous satisfaire
+                                    rapidemment, à toute heure du jour et de la nuit. Sandwhiches, pizzas, crêpes...
+                                    <br>
+                                    <span class="sub">Service : H24*</span> </p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="card flex-row flex-wrap text-center mt-5 mb-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/restaurants/restaurant-abandonne-n2-b7k489.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">A La Bonne Wurst</h4>
+                                <p class="card-text">A La Bonne Wurst, 349 variétés de saucisses sont sublimées par le
+                                    chef autrichien étoilé Helmutt Shwratz. <br>
+                                    <span class="sub">Service : H24*</span></p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fist Pass -->
+                <div class="row mt-5 mb-5" id="Fistpass">
+                    <div class="card bg-dark text-white text-center">
+                        <img src="assets/img/fistpass2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="bg-text">
+                                <p class="card-text"><strong>FIST PASS</strong><br>Votre temps est précieux et Fisty le
+                                    sait ! Ne le perdez plus en faisant la queue !
+                                </p>
+                            </div>
+                            <button class="btnCards" id="md-fist">Réservez dés maintenant<a href=""></a></button>
+                            <button class="btnCards" id="sm-fist"><span class="blinker">Fist Pass<br>En savoir
+                                    plus</span><a href=""></a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Forfait -->
+                <div class="row mt-5 mb-5">
+                    <!-- Col gauche -->
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="forfaitGauche">
+                        <!-- 1 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/solo.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">L'offre SOLO</h4>
+                                <p class="card-text">Vous n'avez pas d'mis ? Ne vous inquiétez pas !
+                                    Fisty pense à vous ! 5% de réduction sur le prix d'entré
+                                </p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card flex-row flex-wrap text-center mt-5 mb-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/bang.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">L'offre BANG</h4>
+                                <p class="card-text">Rapprochez vous de vos amis avec l'offre BANG, -25% l'entrée pour
+                                    tout les membres du groupe !
+                                </p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Col droite -->
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="forfaitDroite">
+                        <!-- 1 -->
+                        <div class="card flex-row flex-wrap text-center mt-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/cousi.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">L'offre COUSINE</h4>
+                                <p class="card-text">Ne gardez plus votre cousine pour vous !! ramenez là à Fistiland et
+                                    bénéficiez ensemble d’avantages exclusifs à partager avec les autres visiteurs.</p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card flex-row flex-wrap text-center mt-5 mb-5">
+                            <div class="card-header border-0">
+                                <img src="assets/img/family.jpg" alt="">
+                            </div>
+                            <div class="card-block px-2">
+                                <h4 class="card-title">L'offre FAMILY</h4>
+                                <p class="card-text">Venez avec votre famille ! -25% sur l'entrée, et 50% au Bateau
+                                    Beurré</p>
+                                <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AnuPass -->
+                <div class="row mt-5 mb-5" id="AnuPass">
+                    <div class="card bg-dark text-white text-center">
+                        <img src="assets/img/anupass2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="bg-text">
+                                <p class="card-text"><strong>ANU PASS</strong><br>Profitez de nos réduction toutes
+                                    l'année !
+                                </p>
+                            </div>
+                            <button class="btnCards" id="md-anu">Réservez dés maintenant<a href=""></a></button>
+                            <button class="btnCards" id="sm-anu"> <span class="blinker">Anu Pass<br>En savoir
+                                    plus</span><a href=""></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section class="navfooter">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                        <h5>Information légales</h5>
+                        <ul>
+                            <li><a href="">CGU</a></li>
+                            <li><a href="">RGPD</a></li>
+                            <li><a href="">Réglement interieur du Parc</a></li>
+                            <li><a href="">Réglement interieur des hôtels</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="footermid">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="">Centre de secours</a></li>
+                                <li><a href="">Tarifs</a></li>
+                                <li><a href="">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>A propos</h5>
+                        <ul>
+                            <li><a href="">News letter</a></li>
+                            <li><a href="">Travailler à Fistiland</a></li>
+                            <li><a href="">Information sur l'entreprise</a></li>
+                            <li><a href="">Nos partenaires</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <p class="text-center">&#9400; Copyrights Web15Academy All rights reserved 2019</p>
+        </footer>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/billeterie.js"></script>
+</body>
+
+</html>

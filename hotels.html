@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Fistiland au fond du fun">
+    <meta name="keywords" content="fistiland, fist, promo, theme park hotel">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/content.css">
+    <title>Fistiland, au fond du fun !</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="pageHotels">
+        <header id="top">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h1 class="breath">Fistiland</h1>
+                </div>
+                <div class="col-sm-4 d-none d-lg-block">
+                    <button type="button" class="btn" id="btnLogin">Mon compte <a href="#"></a></button>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <section class="navi">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="home.html">Accueil<span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Parc
+                                    </a>
+                                    <div class="dropdown-menu" id="dropdownMenu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="parc.html">Plan</a>
+                                        <a class="dropdown-item" href="attractions.html">Attractions</a>
+                                        <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+                                        <a class="dropdown-item" href="hotels.html">Hôtels</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="billeterie.html">Billeterie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="#">Mon compte</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <div class="container">
+                <!-- hotel 1 -->
+                <div class="row mb-5">
+                    <div class="container">
+                        <div class="hotelSkew">
+                            <div class="hotel">
+                                <div class="card flex-row flex-wrap">
+                                    <div class=" d-sm-block d-md-block d-lg-none">
+                                        <img src="assets/img/hotel/maya-hotel.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-header border-0 d-none d-md-none d-lg-block">
+                                        <div id="carouselhotelctrl1" class="carousel slide carousel-fade"
+                                            data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselhotelctrl1" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#carouselhotelctrl1" data-slide-to="1"></li>
+                                                <li data-target="#carouselhotelctrl1" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/hotel/maya-hotel.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/room1_1.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/room1_2.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselhotelctrl1" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselhotelctrl1" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- cardblock -->
+                                    <div class="card-block">
+                                        <h4 class="card-header text-center mb-3 cardtitle">Le Saint Dave</h4>
+                                        <p class="card-text">Le grand hôtel <strong>Saint Dave</strong> Réouvre ses
+                                            portes !
+                                            Allez au fond du fun dans l'une de nos suites <strong>Fister</strong> et
+                                            bénéficiez
+                                            de -20% sur
+                                            présentation de votre <strong>AnuPass</strong><sup
+                                                style="font-size: 10px">2</sup>
+                                            <br>
+                                            <span style="font-size: 9px"><sup>2</sup> : Offre valable uniquement sur les
+                                                suites
+                                                Fister. Services d'étage non compris.</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer w-100 text-center">
+                                        <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                                        <button class="btnCards">Localiser<a href=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel 2 -->
+                <div class="row mt-5 mb-5">
+                    <div class="container">
+                        <div class="hotelSkew">
+                            <div class="hotel">
+                                <div class="card flex-row flex-wrap">
+                                    <div class=" d-sm-block d-md-block d-lg-none">
+                                        <img src="assets/img/hotel/sanatorium.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-header border-0 d-none d-lg-block">
+                                        <div id="carouselhotelctrl2" class="carousel slide carousel-fade"
+                                            data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselhotelctrl2" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#carouselhotelctrl2" data-slide-to="1"></li>
+                                                <li data-target="#carouselhotelctrl2" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/hotel/sanatorium.png" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/room2_1.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/room2_3.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselhotelctrl2" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselhotelctrl2" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- cardblock -->
+                                    <div class="card-block">
+                                        <h4 class="card-header text-center mb-3 cardtitle">Le Royal Prypiat</h4>
+                                        <p class="card-text">Transporté pierre après pierre depuis la ville la plus
+                                            (radio)active du monde, le <strong>Royal Prypiat</strong> vous ofre le must du confort
+                                            soviètique circa 1986. Et grâce aux masques à gaz offerts, c'est Carnaval
+                                            toute l'année !
+                                        </p>
+                                    </div>
+                                    <div class="card-footer w-100 text-center">
+                                        <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                                        <button class="btnCards">Localiser<a href=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel 3 -->
+                <div class="row mt-5 mb-5">
+                    <div class="container">
+                        <div class="hotelSkew">
+                            <div class="hotel">
+                                <div class="card flex-row flex-wrap">
+                                    <div class=" d-sm-block d-md-block d-lg-none">
+                                        <img src="assets/img/hotel/urbex.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-header border-0 d-none d-lg-block">
+                                        <div id="carouselhotelctrl3" class="carousel slide carousel-fade"
+                                            data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselhotelctrl3" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#carouselhotelctrl3" data-slide-to="1"></li>
+                                                <li data-target="#carouselhotelctrl3" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/hotel/urbex.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/piscine.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/Bad_hotel.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselhotelctrl3" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselhotelctrl3" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- cardblock -->
+                                    <div class="card-block">
+                                        <h4 class="card-header text-center mb-3 cardtitle">Das Block</h4>
+                                        <p class="card-text"><strong>Das Block</strong> est l'hotel du brassage des cultures, mélant
+                                            l'architecture élégante de la RDA et les subtiles arches typiques des
+                                            constructions nord-africaines. Inclus : la formule petit-déjeuner Ojja
+                                            Wurst.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer w-100 text-center">
+                                        <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                                        <button class="btnCards">Localiser<a href=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hotel 4 -->
+                <div class="row mt-5 mb-5">
+                    <div class="container">
+                        <div class="hotelSkew">
+                            <div class="hotel">
+                                <div class="card flex-row flex-wrap">
+                                    <div class=" d-sm-block d-md-block d-lg-none">
+                                        <img src="assets/img/hotel/f1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-header border-0 d-none d-lg-block">
+                                        <div id="carouselhotelctrl4" class="carousel slide carousel-fade"
+                                            data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselhotelctrl4" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#carouselhotelctrl4" data-slide-to="1"></li>
+                                                <li data-target="#carouselhotelctrl4" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/hotel/f1.jpg" class="d-block h-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/piscine.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/hotel/Bad_hotel.jpg" class="d-block h-100"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselhotelctrl4" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselhotelctrl4" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- cardblock -->
+                                    <div class="card-block">
+                                        <h4 class="card-header text-center mb-3 cardtitle">Le Come 'n Go</h4>
+                                        <p class="card-text">Special petit budget et recommandé pour les débutants ne
+                                            souhaitant pas s'éterniser à l'intérieur ou les visiteurs désirant faire une
+                                            visite éclaire. Lits Single ou Double, frais de bouche en sus.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer w-100 text-center">
+                                        <button class="btnCards">Réservez dés maintenant<a href=""></a></button>
+                                        <button class="btnCards">Localiser<a href=""></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section class="navfooter">
+                <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                        <h5>Information légales</h5>
+                        <ul>
+                            <li><a href="">CGU</a></li>
+                            <li><a href="">RGPD</a></li>
+                            <li><a href="">Réglement interieur du Parc</a></li>
+                            <li><a href="">Réglement interieur des hôtels</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="footermid">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="">Centre de secours</a></li>
+                                <li><a href="">Tarifs</a></li>
+                                <li><a href="">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>A propos</h5>
+                        <ul>
+                            <li><a href="">News letter</a></li>
+                            <li><a href="">Travailler à Fistiland</a></li>
+                            <li><a href="">Information sur l'entreprise</a></li>
+                            <li><a href="">Nos partenaires</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <p class="text-center">&#9400; Copyrights Web15Academy All rights reserved 2019</p>
+        </footer>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/hotels.js"></script>
+</body>
+
+</html>

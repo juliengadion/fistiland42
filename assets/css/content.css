@@ -1,0 +1,495 @@
+@font-face {
+    font-family: SnackerComic;
+    src: url("../fonts/snacker_comic/SnackerComic.ttf");
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(247, 247, 247); */
+    font-family: 'Montserrat', sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+#pageHotels {
+    background-image: url(../img/hotel/bg_room.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.300), rgba(255,255,255,1));
+
+}
+
+#restaurants {
+    background-image: url(../img/restaurants/bg_restau.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.300), rgba(255,255,255,1));
+
+}
+
+#pageAttractions {
+    background-image: url(../img/attractions/bg_attractions.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0.300), rgba(255,255,255,1));
+
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.navbar{
+    width: 100%;
+    background-color: transparent !important;
+    position: absolute;
+    transition: 0.8s;
+    padding: 0;
+}
+
+.navbar-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: darkorange !important; 
+    height: 3.5em;
+  }
+
+.navbar a {
+    color: white !important;
+    font-size: 25px;
+    padding: 8px 30px !important;
+    font-weight: 500;
+    text-shadow: 4px 5px 6px black;
+    border-bottom: solid 3px transparent;
+    transition: 0.8s;
+}
+
+.navbar a:hover {
+    border-bottom: solid 3px rgb(220, 220, 220);
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-fixed {
+    background-color: darkorange;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+h1 {
+    color: whitesmoke;
+    font-family: SnackerComic;
+    font-size: 90px;
+    text-shadow: -2px 2px 15px rgb(87, 119, 134);
+    padding-top: 50px;
+}
+
+#btnLogin {
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#btnLogin:hover {
+    background-color: rgb(0, 123, 255);
+}
+
+header{
+    text-align: center;
+    margin-bottom: 200px;
+    height: 500px;
+    background-image: url("../img/planet-coaster3.jpg");
+    border-bottom-left-radius: 100% 35%;
+    border-bottom-right-radius: 100% 35%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.356);
+    background-blend-mode: overlay;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btnticket:hover, #btnroom:hover, #btnForm:hover {
+    background-color: white !important;
+    border: solid 1px rgb(0, 123, 255) ;
+    color: rgb(0, 123, 255) !important;
+    
+}
+
+#btnticket, #btnroom, #btnForm {
+    color: rgb(255, 255, 255);
+    border: solid 1px;
+    border-radius: 23.6px;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+/* skew */
+
+
+
+.navfooter{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.navfooter ul{
+    list-style-type: none;
+}
+
+h5{
+    font-size: 18px;
+    text-align: center;
+}
+
+#footermid{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding: 0%;
+    margin: 0;
+}
+
+.navfooter a{
+    color: black !important;
+    font-size: 15px;
+    padding: 8px 30px !important;
+    font-weight: 500;
+    border-bottom: solid 3px transparent;
+}
+
+/*MAIN*/
+
+.hotelSkew {
+    height: 500px;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    background-color: white;
+    transform: skewY(-6deg);
+    border: rgba(255, 140, 0, 0.8) solid 15px;
+}
+
+.attractionSkew {
+    height: 400px;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    background-color: white;
+    transform: skewY(-6deg);
+    border: rgba(255, 140, 0, 0.8) solid 15px;
+}
+
+
+.card {
+    transform: skewY(6deg);
+    border: none;
+}
+
+/* //////////////// */
+
+ .carousel-item{
+    /* max-height: 400px;
+    max-width: 350px;
+    min-width: 350px; */
+    height: 230px;
+}
+
+
+
+.btnCards {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 23.6px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(0, 123, 255);
+    margin: 0 32%;
+}
+
+.btnCards:hover {
+    border: solid 1px rgb(0, 123, 255);
+    border-radius: 23.6px;
+    color: rgb(0, 123, 255);
+    background-color: white;
+}
+
+.dealtext {
+    position: absolute;
+    display: block;
+    width: 50%;
+    font-size: 2em;
+    animation-name: defil;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    bottom: 30px;
+ }
+
+ @keyframes defil {
+    0%, 25% { left: -100%; opacity: 0; }
+    25%,50% { left: 25%; opacity: 1; }
+    60%, 100% { left: 50%; opacity: 0; }
+}
+
+.card-header{
+    width: 31%;
+    padding: 0 !important;
+}
+.card-block{
+    width: 69%;
+}
+.cardtitle{
+    width: 100%;
+    padding: 15px !important;
+}
+
+.card-text{
+    margin-left: 20px;
+}
+
+.small {
+    font-size: 0.75em;
+}
+
+.card-footer{
+    background-color: transparent;
+}
+
+.card-footer .btnCards{
+    margin: 8px 20px;
+    display: inline-block;
+}
+
+/* Page Form */
+.spanmention{
+    color: red;
+}
+
+.FormSkew {
+    height: 900px;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    margin-top: 115px;
+    background-color: white;
+    transform: skewY(-6deg);
+    border: rgba(255, 140, 0, 0.7) solid 15px;
+}
+
+form, #pform{
+    margin-left: 20%;
+    transform: skewY(6deg);
+}
+
+.interContainerForm {
+    background-color: rgba(255, 140, 0, 0.7);
+    transform: skewY(6deg);
+    transform-origin: top;
+    width: 100%;
+    height: 200px;
+}
+
+.interForm {
+    transform: skewY(-6deg);
+    transform-origin: top right;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: SnackerComic;
+    text-shadow: 4px 5px 6px black;
+    letter-spacing: 5px;
+}
+
+
+.accountSkew {
+    height: 600px;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    margin-top: 115px;
+    background-color: white;
+    transform: skewY(-6deg);
+    border: rgba(255, 140, 0, 0.7) solid 15px;
+}
+
+/*Medium*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /*header CSS*/
+    header{
+        border-bottom-left-radius: 100% 20%;
+        border-bottom-right-radius: 100% 20%;
+        margin-bottom: 100px;
+    }
+    /* fin header*/
+
+    .dealtext{
+        bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    #navbarSupportedContent {
+        z-index: 1000;
+
+    }
+    .navbar-nav {
+        background-color: darkorange !important;
+    }
+    .hotelSkew {
+        height: 730px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+    .card-block {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+    .btnCards {
+        margin: 8px 0 !important;
+    }
+    .cardtitle {
+        padding: 0px !important;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        margin: auto;
+    }
+    .card-footer{
+        background-color: transparent;
+        padding: 0;
+    }
+    .FormSkew {
+        height: 900px;
+        width: 100%;
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left: 20px; 
+        margin-top: 75px;
+        background-color: white;
+        transform: skewY(-6deg);
+        border: rgba(255, 140, 0, 0.8) solid 15px;
+    }
+    form, #pform{
+        margin-left: 10%;
+        transform: skewY(6deg);
+        width: 100%;
+    }
+    .accountSkew {
+        height: 580px;
+    }
+    
+    .attractionSkew {
+        height: 700px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+}
+/*small*/
+@media screen and (max-width: 767px) {
+    /* header */
+    header{
+        border-bottom-left-radius: 100% 15%;
+        border-bottom-right-radius: 100% 15%;
+        margin-bottom: 50px;
+    }
+    /* fin header */
+    .dealtext{
+        bottom: 20px;
+        font-size: 1.5em;
+    }
+    #navbarSupportedContent {
+        z-index: 1000;
+    }
+    .navbar-nav {
+    background-color: darkorange !important;
+    }
+
+    .hotelSkew {
+        height: 640px;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+    .card-block {
+        width: 100% !important;
+        padding: 7px !important;
+    }
+    .btnCards {
+        margin: 8px 0 !important;
+    }
+    .cardtitle {
+        padding: 0px !important;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+    .FormSkew {
+        height: 1000px;
+        width: 100%;
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left: 20px; 
+        background-color: white;
+        transform: skewY(-6deg);
+        border: rgba(255, 140, 0, 0.7) solid 15px;
+        margin-top: 40px;
+    }
+
+    .interForm {
+        font-size: 4em;
+    }
+    
+    form, #pform{
+        margin-left: 0;
+        transform: skewY(6deg);
+    }
+    #message{
+        resize: both;
+        width: 100%;
+    }
+    .attractionSkew {
+        height: 500px;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+    .accountSkew {
+        height: 750px;
+        padding-top: 50px; 
+    }
+}

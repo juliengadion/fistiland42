@@ -1,0 +1,199 @@
+ /* ///// INTERTITTRE ////*/
+ .interContainerDroite {
+    background-color: rgba(255, 140, 0, 0.8);
+    transform: skewY(-6deg);
+    transform-origin: top;
+    width: 100%;
+    height: 200px;
+}
+
+.interDroite {
+    transform: skewY(6deg);
+    transform-origin: top left;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: SnackerComic;
+    text-shadow: 4px 5px 6px black;
+    letter-spacing: 5px;
+}
+
+.interContainerGauche {
+    background-color: rgba(255, 140, 0, 0.7);
+    transform: skewY(6deg);
+    transform-origin: top;
+    width: 100%;
+    height: 200px;
+}
+
+.interGauche {
+    transform: skewY(-6deg);
+    transform-origin: top right;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: SnackerComic;
+    text-shadow: 4px 5px 6px black;
+    letter-spacing: 5px;
+}
+
+ .btnCards {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 23.6px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(0, 123, 255);
+}
+
+.btnCards:hover {
+    border: solid 1px rgb(0, 123, 255);
+    border-radius: 23.6px;
+    color: rgb(0, 123, 255);
+    background-color: white;
+}
+
+.card-img-top {
+    border-bottom-left-radius: 100% 35%;
+    border-bottom-right-radius: 100% 35%;
+    margin-bottom: 30px;
+}
+
+.card-text {
+    height: 100px;
+}
+
+.card {
+    border-bottom-right-radius: 50% 30%;
+    text-align: left;
+    transition-duration:  0.8s;
+}
+
+.card:hover {
+    background-color: rgba(95, 95, 95, 0.027);
+    background-blend-mode: overlay;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.274);
+    transform: scale(0.98);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.692);
+    left: 0;
+    right: 0;
+    font-size: 2em;
+}
+
+.vedetteCar {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(228, 224, 224);
+    padding: 5% 2%;
+    border-radius: 15px;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+
+.carousel1 .carousel-inner {
+    border-radius: 15px;
+}
+
+.offreCar {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(228, 224, 224);
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+
+.carousel3 {
+    margin-top: 100px;
+    background-color: rgb(228, 224, 224);
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+
+#prev2 {
+    margin-left: -100px;
+}
+
+#next2 {
+    margin-right: -100px;
+}
+
+#nextIcon2, #prevIcon2 {
+    background-color: rgb(0, 123, 255);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.blinker{
+      text-decoration: blink;
+      animation-name: blinker;
+      animation-duration: 1s;
+      animation-iteration-count:infinite;
+      animation-timing-function:ease-in-out;
+      animation-direction: alternate;
+      color: yellow;
+      font-weight: bold;
+  }
+
+@keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+/* media queries */
+/* Small  */
+@media screen and (max-width: 767px){
+    .card-img-top{
+        margin-bottom: 5px;
+    }
+    .card {
+        border-bottom-right-radius: 50% 15%;
+        margin-bottom: 10px;
+        height: 350px;
+    }
+    .card-text {
+        margin-bottom: -10px;
+    }
+    #prev2 {
+        margin-left: -25px;
+    }
+    #next2 {
+        margin-right: -25px;
+    }
+    #nextIcon2, #prevIcon2 {
+        background-color: rgb(0, 123, 255);
+        padding: 30px;
+        border-radius: 50%;
+    }
+    .interContainerGauche {
+        width: 100%;
+    }
+    .interContainerDroite{
+        width: 100%;
+    }
+    .interGauche {
+        font-size: 4em;
+    }
+    .interDroite {
+        font-size: 4em;
+    }
+}
+/* Medium */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .btnCards {
+        margin-left: 8px;
+    }
+    .interContainerGauche {
+        width: 100%;
+    }
+    .interContainerDroite{
+        width: 100%;
+    }
+}
